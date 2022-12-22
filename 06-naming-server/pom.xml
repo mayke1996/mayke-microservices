@@ -55,6 +55,9 @@
 				<configuration>
 					<image>
 						<name>maykeferreira/${project.artifactId}:${project.version}</name>
+						<bindings>
+                            <binding>${basedir}/bindings/ca-certificates:/platform/bindings/ca-certificates</binding>
+                        </bindings>
 					</image>
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 				</configuration>
