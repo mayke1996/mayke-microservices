@@ -60,6 +60,13 @@
 					</image>
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 				</configuration>
+				<executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </execution>
+            	</executions>
 			</plugin>
 		</plugins>
 	</build>
