@@ -22,4 +22,4 @@ jobs:
           distribution: 'adopt'
       - name: Build Eureka Naming Server Container Image
         working-directory: ./06-naming-server
-        run: mvn spring-boot:build image -DskipTests
+        run: mvn spring-boot:build-image -Dspring-boot.build-image.imageName=springio/gs-spring-boot-docker
