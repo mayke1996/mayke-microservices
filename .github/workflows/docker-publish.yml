@@ -31,11 +31,11 @@ jobs:
         
       - name: Build Cambio Microservice Jar
         working-directory: ./05-cambio-service
-        run: mvn spring-boot:build-image -Dspring-boot.build-image.imageName=springio/gs-spring-boot-docker
+        run: mvn clean package -DskipTests
         
       - name: Build Book Microservice Jar
         working-directory: ./06-book-service
-        run: mvn spring-boot:build-image -Dspring-boot.build-image.imageName=springio/gs-spring-boot-docker
+        run: mvn clean package -DskipTests
         
       - name: Docker compose Build
         working-directory: .
