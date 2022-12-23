@@ -20,8 +20,6 @@ services:
       - erudio-network
   naming-server:
     image: maykeferreira/naming-server:0.0.1-SNAPSHOT
-    environment: 
-      - BP_ENABLE_RUNTIME_CERT_BINDING: true
     ports:
       - 8761:8761
     networks:

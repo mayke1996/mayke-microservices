@@ -55,6 +55,10 @@
 				<configuration>
 					<image>
 						<name>maykeferreira/${project.artifactId}:${project.version}</name>
+						<builder>dmikusa/tiny-java-native</builder>
+						<env>
+							<BP_NATIVE_IMAGE>true</BP_NATIVE_IMAGE>
+						</env>
 						<bindings>
                             <binding>${basedir}/bindings/ca-certificates:/platform/bindings/ca-certificates</binding>
                         </bindings>
